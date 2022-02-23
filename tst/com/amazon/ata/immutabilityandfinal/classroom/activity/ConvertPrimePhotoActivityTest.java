@@ -22,7 +22,7 @@ public class ConvertPrimePhotoActivityTest {
     private static final List<ConversionType> SINGLE_CONVERSION_LIST = ImmutableList.of(ConversionType.SEPIA);
     private static final List<ConversionType> MULTIPLE_CONVERSIONS_LIST =  ImmutableList.of(
         ConversionType.SEPIA, ConversionType.GREYSCALE);
-    private static String TEST_IMAGE_FILE_PATH = "src/test/resources/this_is_a_test.png";
+    private static String TEST_IMAGE_FILE_PATH = "tst/resources/this_is_a_test.png";
 
     private ConvertPrimePhotoActivity activity;
 

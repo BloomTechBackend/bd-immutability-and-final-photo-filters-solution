@@ -24,7 +24,7 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 public class ConvertPrimePhotoIntegrationTest {
 
-    private static String TEST_IMAGE_FILE_PATH = "src/test/resources/this_is_a_test.png";
+    private static String TEST_IMAGE_FILE_PATH = "tst/resources/this_is_a_test.png";
 
     private ConvertPrimePhotoActivity activity1;
     private ConvertPrimePhotoActivity activity2;

@@ -1,7 +1,5 @@
 # #HashtagPrimePhotoFilters
 
-**branch name:** immutabilityandfinal-classroom
-
 ## Introduction
 We've been working on a proof of concept (POC) that allows prime photo users to convert their photos by applying 
 different filters. For example, the user provides a photo and requests it to be converted to a Sepia image. The service 
@@ -77,18 +75,17 @@ We're guessing it has something to do with sharing state across the threads. Con
 
 ## Task
 Make edits to the POC to get the multiple conversion functionality working. You can validate it is working by running
-the following workflow: `immutabilityandfinal-classroom-conversion-tests`. This will run the activity's unit tests and 
+the following tests: `ConvertPrimePhotoActivityTest` and `ConvertPrimePhotoIntegrationTest`. This will run the activity's unit tests and 
 the integration tests. If the integration tests fail, they will provide you with files to inspect.
 
 You shouldn't need to edit any of the threading logic in the Activity class, nor any of the logic in `PrimePhotoUtils`.
 
-You can validate you made all the changes expected to the model files by executing the following workflows:
-- `immutabilityandfinal-classroom-prime-photo-tests`
-- `immutabilityandfinal-classroom-pixel-tests`
-- `immutabilityandfinal-classroom-rgb-tests`
+You can validate you made all the changes expected to the model files by executing the following tests:
+- `PrimePhotoIntrospectionTest`
+- `PixelIntrospectionTest`
+- `RGBIntrospectionTest`
 
-You can also run the `main` method in `PrimePhotoConverterManualTester` by running the following workflow:
-- `immutabilityandfinal-classroom-manual-tester`
+You can also run the `main` method in `PrimePhotoConverterManualTester`.
 
 Note: You do not need to check any of your files in the `src/output` directory. If there get to be a lot in there 
 while you are testing and you find it distracting, feel free to delete any of the files. 
@@ -96,4 +93,4 @@ while you are testing and you find it distracting, feel free to delete any of th
 ## Hints
 * [A strategy to write thread safe code](./hints/hint-00.md)
 * [Can I edit method signatures?](./hints/hint-01.md)
-* [The prime-photo, pixel, and rgb workflows pass but my integ tests do not](./hints/hint-02.md)
+* [The prime-photo, pixel, and rgb tests pass but my integ tests do not](./hints/hint-02.md)
